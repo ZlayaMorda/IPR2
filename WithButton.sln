@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithButton", "WindowsFormsApp1\WithButton.csproj", "{34D138BA-6408-458F-8970-270C2F8E1ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin", "Plugins\Plugin\Plugin.csproj", "{4B55AFBF-7820-42A8-BB02-384480051537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasePlug", "BasePlug\BasePlug\BasePlug.csproj", "{3E787117-07D5-45F6-898C-9FD93E160362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_Color", "Plugins\Plugin_Color\Plugin_Color.csproj", "{23207A69-4928-412F-B7F9-EA49DE40300C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonsPlugins", "Plugins\ButtonsPlugins\ButtonsPlugins.csproj", "{AA18B483-4A61-4117-9D87-3B0E9B8EC244}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{B62731CA-8AF8-4982-A0D4-7214DFD8394C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardPlugin", "Plugins\CardPlugin\CardPlugin.csproj", "{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34D138BA-6408-458F-8970-270C2F8E1ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D138BA-6408-458F-8970-270C2F8E1ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D138BA-6408-458F-8970-270C2F8E1ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D138BA-6408-458F-8970-270C2F8E1ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B55AFBF-7820-42A8-BB02-384480051537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B55AFBF-7820-42A8-BB02-384480051537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B55AFBF-7820-42A8-BB02-384480051537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B55AFBF-7820-42A8-BB02-384480051537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E787117-07D5-45F6-898C-9FD93E160362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E787117-07D5-45F6-898C-9FD93E160362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E787117-07D5-45F6-898C-9FD93E160362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E787117-07D5-45F6-898C-9FD93E160362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23207A69-4928-412F-B7F9-EA49DE40300C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23207A69-4928-412F-B7F9-EA49DE40300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23207A69-4928-412F-B7F9-EA49DE40300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23207A69-4928-412F-B7F9-EA49DE40300C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA18B483-4A61-4117-9D87-3B0E9B8EC244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA18B483-4A61-4117-9D87-3B0E9B8EC244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA18B483-4A61-4117-9D87-3B0E9B8EC244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA18B483-4A61-4117-9D87-3B0E9B8EC244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B55AFBF-7820-42A8-BB02-384480051537} = {B62731CA-8AF8-4982-A0D4-7214DFD8394C}
+		{23207A69-4928-412F-B7F9-EA49DE40300C} = {B62731CA-8AF8-4982-A0D4-7214DFD8394C}
+		{AA18B483-4A61-4117-9D87-3B0E9B8EC244} = {B62731CA-8AF8-4982-A0D4-7214DFD8394C}
+		{AB96CBCE-8B0D-49EC-8A57-4A7C18B723DE} = {B62731CA-8AF8-4982-A0D4-7214DFD8394C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16A68AD9-C90F-4997-9D14-918FDAC2DB18}
+	EndGlobalSection
+EndGlobal
