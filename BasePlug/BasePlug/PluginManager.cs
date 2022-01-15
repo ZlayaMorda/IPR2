@@ -8,7 +8,6 @@ namespace BasePlug
 {
     public class PluginManager
     {
-        //public List<IPlugin> Plugins = new List<IPlugin>();
         public IPlugin AddPlugin;
         public IPlugin_color ColorPlugin;
 
@@ -16,9 +15,8 @@ namespace BasePlug
         {
             //перебираем все файлы dll
             foreach (var file in Directory.EnumerateFiles(directory, "*.dll", SearchOption.AllDirectories))
-                //try
-                {
-                        var  ass = Assembly.LoadFile(file);
+            {
+                    var  ass = Assembly.LoadFile(file);
 
 
 
@@ -52,7 +50,9 @@ namespace BasePlug
                                                 foreach (Type type in ass.GetTypes())
                                                 {
                                                     //создаем экземпляр плагина
-                                                    ColorPlugin = ass.CreateInstance(type.FullName) as IPlugin_color;
+                                                    var inter = type.GetInterface("IPlugin_color");
+                                                    if (inter != null)
+                                                        ColorPlugin = ass.CreateInstance(type.FullName) as IPlugin_color;
 
                                                 }
                                             }
@@ -85,14 +85,13 @@ namespace BasePlug
                                                 }
                                             }
                                             break;
-                            }
+                                    }
 
                                 }
                         }
                     }
 
-                }
-                //catch {/*is not .NET assembly*/}
+            }
         }
     }
 }

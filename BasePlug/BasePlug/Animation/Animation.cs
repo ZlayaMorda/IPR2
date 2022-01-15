@@ -37,9 +37,9 @@ namespace ButtonsPlugins
 
         public int StepDivider = 11;
 
-        private float Step()
+        public float Step()
         {
-            float basicStep = Math.Abs(Volume) / StepDivider; // Math.Abs - превращает числа 0< в >0
+            float basicStep = Math.Abs(Volume) / StepDivider;
             float resultStep = 0;
 
             if (Reverse == false)
@@ -59,7 +59,7 @@ namespace ButtonsPlugins
             }
             else
             {
-                if (Value >= p15 || Value <= p85)
+                if ((Value >= p15 && Value < p30) || (Value <= p85 && Value > p70)) 
                 {
                     resultStep = basicStep / 3.5f;
                 }
@@ -129,6 +129,22 @@ namespace ButtonsPlugins
             this.ID = ID;
 
             this.InvalidateControl = InvalidateControl;
+
+            this.Value = Value;
+            this.TargetValue = TargetValue;
+
+            StartValue = Value;
+            Volume = TargetValue - Value;
+
+            p15 = ValueByPercent(15);
+            p30 = ValueByPercent(30);
+            p70 = ValueByPercent(70);
+            p85 = ValueByPercent(85);
+        }
+
+        public Animation(string ID, float Value, float TargetValue)
+        {
+            this.ID = ID;
 
             this.Value = Value;
             this.TargetValue = TargetValue;
